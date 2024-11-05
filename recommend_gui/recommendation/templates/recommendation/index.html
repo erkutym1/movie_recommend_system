@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation System</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+</head>
+<body style="background-image: url('{% static 'assets/batman.jpg' %}'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
+    <div class="form-container">
+        <h2>Movie Recommendation System</h2>
+        <div>
+
+                <label for="filter" class="switch" aria-label="Toggle Filter">
+                    <input type="checkbox" id="filter" />
+                     <span>Kişisel Öneri</span>
+                    <span>Popüler Öneriler</span>
+                </label>
+            </div>
+            <br>
+
+        <div class="form-row" style="">
+            <div class="form-group">
+                <input placeholder="ID Girin" id="userId" type="text">
+            </div>
+        </div>
+
+        <div>
+
+            <div class="form-group">
+                <select id="genre">
+                    <option value="">Kategori Seçin</option>
+                    <option value="Western">Western</option>
+                    <option value="Crime">Crime</option>
+                    <option value="Mystery">Mystery</option>
+                    <option value="Musical">Musical</option>
+                    <option value="Adventure">Adventure</option>
+                    <option value="Action">Action</option>
+                    <option value="Thriller">Thriller</option>
+                    <option value="Animation">Animation</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Horror">Horror</option>
+                    <option value="Documentary">Documentary</option>
+                    <option value="War">War</option>
+                    <option value="Children">Children</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Sci-Fi">Sci-Fi</option>
+                    <option value="IMAX">IMAX</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Film-Noir">Film-Noir</option>
+                </select>
+            </div>
+        </div> <br>
+
+        <button class="btn">
+            <svg height="24" width="24" fill="#FFFFFF" viewBox="0 0 24 24" data-name="Layer 1" id="Layer_1" class="sparkle">
+                <path d="M10,21.236,6.755,14.745.264,11.5,6.755,8.255,10,1.764l3.245,6.491L19.736,11.5l-6.491,3.245ZM18,21l1.5,3L21,21l3-1.5L21,18l-1.5-3L18,18l-3,1.5ZM19.333,4.667,20.5,7l1.167-2.333L24,3.5,21.667,2.333,20.5,0,19.333,2.333,17,3.5Z"></path>
+            </svg>
+
+            <span class="text">Öneri Getir</span>
+        </button>
+
+
+        <br>
+        <br>
+        <br>
+
+        <div class="box-input" style="">
+          <div class="border">
+            <input type="text" name="text" class="input" placeholder="Önerin Burada Olacak..." readonly>
+          </div>
+        </div>
+
+
+
+
+    <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+    </div>
+</body>
+</html>
